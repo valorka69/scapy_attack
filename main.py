@@ -12,4 +12,3 @@ parser.add_argument("-c", dest="count")
 args = parser.parse_args()
 
 
-ping_ip(args.ip, args.count)
