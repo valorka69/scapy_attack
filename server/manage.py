@@ -4,6 +4,7 @@ import os
 import sys
 import time
 
+
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'server.settings')
@@ -16,10 +17,9 @@ def main():
             "forget to activate a virtual environment?"
         ) from exc
     execute_from_command_line(sys.argv)
-    os.system('cls')
 
 
 if __name__ == '__main__':
-    print('SERVER RUNNING...')
-    time.sleep(3)
+    print('SERVER STARTING....')
+    time.sleep(1)
     main()
