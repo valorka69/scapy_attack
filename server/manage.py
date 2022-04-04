@@ -2,7 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+import time
 
 def main():
     """Run administrative tasks."""
@@ -16,7 +16,10 @@ def main():
             "forget to activate a virtual environment?"
         ) from exc
     execute_from_command_line(sys.argv)
+    os.system('cls')
 
 
 if __name__ == '__main__':
+    print('SERVER RUNNING...')
+    time.sleep(3)
     main()
