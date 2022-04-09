@@ -14,3 +14,6 @@ pc_inform.append(["PROCESSOR: "+proc,"SYSTEM: "+system,"NET_PC: "+net,"IP_ADRESS
 
 def index(request):
 	return render(request,'main/index.html',{'pr':pc_inform[0][0],'sys':pc_inform[0][1],'net':pc_inform[0][2],'ip':pc_inform[0][3]})
+
+def test(request,main_id):
+    return render(request,'main/test.html',{'id':main_id})

@@ -1,14 +1,9 @@
 import argparse
 
 
-def ping_ip(ip_address, count):
-    print(count,ip_address)
-
 
 parser = argparse.ArgumentParser(description="Ping script")
-
-parser.add_argument("-a", dest="ip")
-parser.add_argument("-c", dest="count")
+parser.add_argument("-ti", dest="ip")
 args = parser.parse_args()
 
 
